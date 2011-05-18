@@ -38,5 +38,10 @@ public class DomainObject {
 		this.name = name;
 	}
 
+	public String toString() {
+		return "DomainObject [name=" + name 
+		+ ", comment=" + comment + ",
+ 		uuid=" + uuid + "]"; 
+	}
 
 }
