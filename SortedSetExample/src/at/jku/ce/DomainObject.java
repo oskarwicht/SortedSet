@@ -10,6 +10,9 @@ public class DomainObject {
 		this.id = id;
 	}
 
+	/**
+	* Default-Constructor
+	*/
 	public DomainObject() {
 		super();
 	}
