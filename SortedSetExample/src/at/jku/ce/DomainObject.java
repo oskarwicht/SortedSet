@@ -7,9 +7,10 @@ public class DomainObject {
 	private String name;
 	private String comment;
 
-	public DomainObject(String id){
+	public DomainObject(String name, String comment){
 		super();
-		this.uuid = id;
+		this.comment = comment;
+		this.name = name;
 	}
 
 	/**
