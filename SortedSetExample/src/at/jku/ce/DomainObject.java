@@ -43,5 +43,13 @@ public class DomainObject {
 		+ ", comment=" + comment + ",
  		uuid=" + uuid + "]"; 
 	}
+	
+	public boolean equals(Object obj) { 
+		if (!(obj instanceof DomainObject)) {
+			return false; 
+		}
+		DomainObject domainObj = (DomainObject) obj; 
+		return uuid.equals(domainObj.getUuid()); 
+	}
 
 }
