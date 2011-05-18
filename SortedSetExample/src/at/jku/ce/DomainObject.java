@@ -8,7 +8,7 @@ public class DomainObject {
 
 	public DomainObject(String id){
 		super();
-		this.id = id;
+		this.uuid = id;
 	}
 
 	/**
@@ -18,8 +18,8 @@ public class DomainObject {
 		super();
 	}
 
-	public String getId(){
-		return id;
+	public String getUuid(){
+		return uuid;
 	}
 
 }
