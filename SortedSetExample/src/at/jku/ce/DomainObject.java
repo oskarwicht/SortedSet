@@ -27,9 +27,15 @@ public class DomainObject {
 	public String getComment(){
 		return comment;
 	}
-	public void setComment(String commend){
+	public void setComment(final String commend){
 		this.comment = comment;
 	}
 
+	public String getName(){
+		return name;
+	}
+	public void setName(final String name){
+		this.name = name;
+	}
 
 }
