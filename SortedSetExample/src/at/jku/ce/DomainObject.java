@@ -34,7 +34,7 @@ public class DomainObject {
 	protected String getName(){
 		return name;
 	}
-	pprotected ublic void setName(final String name){
+	protected void setName(final String name){
 		this.name = name;
 	}
 
