@@ -1,6 +1,6 @@
 package at.jku.ce;
 
-public class DomainObject implements Comparable<DomainObject> {
+public class DomainObject{
 
 
 	private String uuid = UUID.randomUUID().toString();
@@ -42,19 +42,5 @@ public class DomainObject implements Comparable<DomainObject> {
 		return "DomainObject [name=" + name 
 		+ ", comment=" + comment + ",
  		uuid=" + uuid + "]"; 
-	}
-	
-	public boolean equals(Object obj) { 
-		if (!(obj instanceof DomainObject)) {
-			return false; 
-		}
-		DomainObject domainObj = (DomainObject) obj; 
-		return uuid.equals(domainObj.getUuid()); 
-	}
-
-	public int compareTo(DomainObject o) { 
-		DomainObject domainObj = (DomainObject) o; 
-		int domObjeComp = name.compareTo(domainObj.getName());
-		return ((domObjeComp == 0) ? uuid.compareTo(domainObj.getUuid()) : domObjeComp);
 	}
 }
