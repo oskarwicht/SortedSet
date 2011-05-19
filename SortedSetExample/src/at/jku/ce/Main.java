@@ -5,7 +5,7 @@ public class Main {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-	Set<DomainObject> objectSet = new HashSet<DomainObject>();
+	Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 
 
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
 	objectSet.add(DomainFactory.createDomainObject("Claudia","Kommentar"));
 
 	for (DomainObject domainObject : objectSet) { 
-		LOGGER.debug(domainObject.getUuid);
+		LOGGER.debug(domainObject.toString();
 
 	}
 }

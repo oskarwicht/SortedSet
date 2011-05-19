@@ -1,6 +1,6 @@
 package at.jku.ce;
 
-public class DomainObject {
+public class DomainObject{
 
 
 	private String uuid = UUID.randomUUID().toString();
@@ -41,4 +41,9 @@ public class DomainObject {
 		this.name = name;
 	}
 
+	public String toString() {
+		return "DomainObject [name=" + name 
+		+ ", comment=" + comment + ",
+ 		uuid=" + uuid + "]"; 
+	}
 }
