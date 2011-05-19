@@ -16,27 +16,29 @@ public class DomainObject {
 	/**
 	* Default-Constructor
 	*/
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 
-	public String getUuid(){
+	protected String getUuid(){
 		return uuid;
 	}
 
-	public String getComment(){
+	protected String getComment(){
 		return comment;
 	}
-	public void setComment(final String commend){
+
+	protected void setComment(final String commend){
+
 		this.comment = comment;
 	}
 
-	public String getName(){
+	protected String getName(){
 		return name;
 	}
-	public void setName(final String name){
+
+	protected void setName(final String name){
 		this.name = name;
 	}
-
 
 }
